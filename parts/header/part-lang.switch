@@ -1,0 +1,30 @@
+<?php
+
+$languages = icl_get_languages('skip_missing=N&orderby=KEY&order=DIR&link_empty_to=str');
+
+$is_offcanvas = isset( $args['offcanvas'] ) && $args['offcanvas'] == true;
+
+?>
+
+<div class="lang-switch">
+
+	<button <?php echo ( isset( $languages[ICL_LANGUAGE_CODE] ) && count( $languages ) == 1 ) ? 'disabled' : ''; ?>>
+		<span class="text-uppercase">
+			<?php echo ( $is_offcanvas ) ? $languages[ICL_LANGUAGE_CODE]['native_name'] : $languages[ICL_LANGUAGE_CODE]['code']; ?>
+		</span>
+		<i class="bi bi-globe-americas"></i>
+	</button>
+
+	<?php if( $languages ): ?>
+
+		<ul class="list-unstyled lang-list mb-0">
+			<?php foreach( $languages as $language ): ?>
+				<?php if( $language['code'] != ICL_LANGUAGE_CODE ): ?>
+					<li><a hreflang="<?php echo $language['code']; ?>" href="<?php echo $language['url']; ?>"><?php echo $language['native_name']; ?></a></li>
+				<?php endif; ?>
+			<?php endforeach; ?>
+		</ul>
+
+	<?php endif; ?>
+
+</div>

@@ -1,0 +1,775 @@
+:root {
+  --color-primary: rgb(0, 92, 170);
+  --color-secondary: rgba(0, 165, 155, 1);
+  --color-yellow: rgba(255, 193, 7, 1);
+  --title-blue: rgba(0, 92, 170, 1);
+}
+
+body {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat", sans-serif;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+hr {
+  color: rgb(179, 179, 179);
+}
+
+.the-content {
+  color: rgb(44, 44, 44);
+}
+
+.wpcf7 p {
+  margin-bottom: 0;
+}
+.wpcf7 .wpcf7-response-output {
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+.wpcf7 .wpcf7-spinner {
+  display: none;
+}
+
+.fs-2-7 {
+  font-size: 2.7em;
+}
+
+ul.bullets {
+  list-style: none;
+  padding: 0;
+}
+ul.bullets li {
+  padding-left: 20px;
+  color: rgb(44, 44, 44);
+}
+ul.bullets li::before {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 4px;
+  background-color: #444;
+  position: absolute;
+  top: 8px;
+  left: 6px;
+}
+ul.bullets li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.accordion.topetop .accordion-item {
+  background: transparent;
+  border: 0;
+  margin-bottom: 10px;
+}
+.accordion.topetop .accordion-item .accordion-button {
+  background: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+  padding: 16px 0px;
+}
+.accordion.topetop .accordion-item .accordion-button:focus {
+  box-shadow: none;
+}
+.accordion.topetop .accordion-item .accordion-body {
+  padding: 24px 0px !important;
+}
+
+.bg-gray {
+  background: rgb(246, 246, 246);
+}
+
+.btn-border-radius {
+  border-radius: 37px;
+}
+
+.btn.text-small {
+  font-size: 0.9em;
+}
+
+.btn {
+  padding: 12px 26px;
+}
+.btn.small {
+  padding: 10px 26px;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: rgb(12, 79, 136);
+  border-color: rgb(12, 79, 136);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  background-color: rgb(4, 145, 136) !important;
+  border-color: rgb(4, 145, 136) !important;
+}
+
+.btn-yellow {
+  background-color: var(--color-yellow);
+  border-color: var(--color-yellow);
+}
+.btn-yellow:hover, .btn-yellow:focus, .btn-yellow:active {
+  background-color: rgb(219, 165, 1) !important;
+  border-color: rgb(219, 165, 1) !important;
+  color: #000 !important;
+}
+
+.py-20 {
+  padding: 20px 0px;
+}
+
+.py-30 {
+  padding: 30px 0px;
+}
+
+.py-40 {
+  padding: 40px 0px;
+}
+
+.py-50 {
+  padding: 50px 0px;
+}
+
+.py-60 {
+  padding: 60px 0px;
+}
+
+.py-70 {
+  padding: 70px 0px;
+}
+
+.no-banner {
+  margin-top: 84px;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.tt-border-radius {
+  border-radius: 52px;
+}
+
+.img-border-radius-top {
+  border-top-right-radius: 131px;
+}
+
+.floating {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.title-blue {
+  color: var(--title-blue) !important;
+}
+
+.text-bg-gray {
+  color: rgb(44, 44, 44);
+}
+
+/* ---- Faqs ----- */
+.accordion.faqs .accordion-item {
+  background: rgb(248, 248, 248);
+  margin-bottom: 14px;
+  border-radius: 10px;
+}
+.accordion.faqs .accordion-item .accordion-button {
+  padding: 23px;
+  color: rgb(44, 44, 44);
+}
+.accordion.faqs .accordion-item .accordion-button:focus, .accordion.faqs .accordion-item .accordion-button:not(:focus) {
+  box-shadow: none !important;
+  border: 0 !important;
+}
+.accordion.faqs .accordion-item .accordion-body::before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 4px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: transparent;
+  transition: background 0.1s ease-in-out;
+}
+.accordion.faqs .accordion-item .accordion-collapse.show .accordion-body::before {
+  background: rgb(0, 166, 156);
+}
+
+.top-bar {
+  background: rgb(29, 29, 29);
+  padding: 9px 0px;
+  color: #fff;
+  z-index: 101;
+}
+.top-bar button,
+.top-bar a {
+  color: #fff;
+}
+.top-bar .redes li a {
+  display: block;
+  margin: 0px 7px;
+}
+.top-bar .options {
+  font-size: 0.9em;
+}
+.top-bar .options > li:not(:first-child) {
+  margin-left: 26px;
+}
+.top-bar .options .lang-switch button span {
+  margin: 0px 6px;
+}
+.top-bar .options .lang-switch button i.bi-chevron-down {
+  top: 3px;
+  font-size: 0.75em;
+}
+.top-bar .options .lang-switch button::after {
+  display: none;
+}
+.top-bar .options .lang-switch .lang-list li a {
+  color: #444;
+  font-size: 0.9em;
+}
+.top-bar .options .lang-switch .lang-list li a:hover, .top-bar .options .lang-switch .lang-list li a:focus {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.logged-in #offcanvasMenu .offcanvas-header {
+  padding-top: 62px;
+}
+#offcanvasMenu .nav-item .nav-link {
+  color: rgb(7, 19, 69);
+  font-size: 1.12em;
+  font-weight: 500;
+}
+#offcanvasMenu .nav-item .nav-link:hover, .current_page_item #offcanvasMenu .nav-item .nav-link {
+  color: var(--blue) !important;
+}
+
+/* ---- Off Canvas ------ */
+#offcanvasMenu .menu-container {
+  height: calc(100dvh - 300px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#offcanvasMenu .menu-container .nav-link {
+  font-size: 1.4em;
+  padding: 16px 0px;
+  text-align: center;
+}
+#offcanvasMenu .dropdown-menu {
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+#offcanvasMenu .lang-switch {
+  position: absolute;
+  bottom: 11%;
+  margin: 0 auto;
+  width: 47%;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+#offcanvasMenu .lang-switch .lang-list a {
+  font-size: 1em;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: -80.25px;
+}
+header nav {
+  backdrop-filter: blur(6.7px);
+  top: 0px;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+header nav .navbar-toggler {
+  padding: 0;
+  border: 0;
+  margin-right: 11px;
+}
+header nav .navbar-toggler .menu-bar {
+  background-color: #fff;
+  display: block;
+  height: 3px;
+  width: 39px;
+  margin-bottom: 6px;
+  border-radius: 3px;
+}
+header nav .navbar-toggler .menu-bar:nth-child(2) {
+  width: 80%;
+  margin-left: auto;
+}
+header nav .navbar-toggler .menu-bar:nth-child(3) {
+  width: 80%;
+  margin-left: auto;
+}
+header nav .navbar-toggler .menu-bar:last-child {
+  margin-bottom: 0;
+}
+header nav .navbar-toggler:focus, header nav .navbar-toggler:active {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 11px;
+}
+header nav .nav-item .nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 22px 11px !important;
+  display: block;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+header nav .nav-item .nav-link:hover {
+  color: #efefef;
+}
+header nav .nav-item .nav-link:focus {
+  color: #fff;
+}
+header nav.bg-tt-white {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 13px rgba(26, 26, 26, 0.03);
+}
+header nav.bg-tt-white .nav-item .nav-link {
+  color: rgb(44, 44, 44);
+}
+header nav.bg-tt-white .nav-item.current_page_item .nav-link, header nav.bg-tt-white .nav-item:hover .nav-link {
+  color: var(--color-primary) !important;
+}
+header nav.bg-tt-white .navbar-toggler .menu-bar {
+  background-color: var(--color-primary);
+}
+.logged-in header {
+  top: 32px !important;
+}
+
+.section-head .section-title {
+  color: rgb(0, 92, 170);
+  margin-bottom: 15px;
+}
+.section-head .section-title.small-title {
+  font-size: 1.5em;
+  line-height: 34px;
+}
+.section-head p {
+  color: rgb(120, 120, 120);
+}
+
+.part-main-banner .item img.main-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 1.5s ease-out;
+}
+.part-main-banner .item img.main-img.zoom-in {
+  transform: scale(1.05);
+}
+.part-main-banner .item .caption-area {
+  z-index: 50;
+  top: 0;
+  height: 100%;
+}
+.part-main-banner .item .caption-area h1 {
+  font-size: 3.3em;
+  font-weight: 800;
+}
+.part-main-banner .item::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.31);
+  position: absolute;
+  z-index: 49;
+}
+
+.blur-item {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  border-radius: 22px;
+  padding: 20px 15px;
+}
+.blur-item .image-area img {
+  width: 57%;
+  margin: 0 auto 20px auto;
+  transform: rotateY(180deg);
+}
+.blur-item .item-caption-area {
+  width: fit-content;
+  margin: 0 auto;
+}
+.blur-item .item-caption-area h6 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+.blur-item .item-caption-area .features li {
+  font-size: 1.2em;
+}
+.blur-item .item-caption-area .features li i {
+  margin-right: 10px;
+}
+.blur-item .item-caption-area .features li:nth-child(2) i {
+  font-size: 1.2em;
+  margin-right: 7px;
+}
+.blur-item .item-caption-area .features li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.part-punta-cana-gyrofly {
+  min-height: 100dvh;
+}
+
+.tour-features li {
+  margin-bottom: 15px;
+}
+.tour-features li .icon-area {
+  margin-right: 15px;
+  font-size: 1.2em;
+}
+.tour-features li .caption-area {
+  padding-top: 2.5px;
+}
+
+/* ----- Experiencias inolvidables ------ */
+.part-experiencia-inolvidable .swipper-container {
+  position: relative;
+}
+.part-experiencia-inolvidable .swipper-container .swiper.experiencias {
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.part-experiencia-inolvidable .swipper-container .swiper.experiencias .swiper-slide {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+.part-experiencia-inolvidable .swipper-container .swiper.experiencias .swiper-slide img {
+  aspect-ratio: 16/13;
+  border-radius: 40px;
+}
+.part-experiencia-inolvidable .swipper-container .swiper-button-next,
+.part-experiencia-inolvidable .swipper-container .swiper-button-prev {
+  background: var(--color-secondary);
+  color: #fff;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+.part-experiencia-inolvidable .swipper-container .swiper-button-next:hover,
+.part-experiencia-inolvidable .swipper-container .swiper-button-prev:hover {
+  background: rgb(7, 147, 138);
+}
+.part-experiencia-inolvidable .swipper-container .swiper-button-next::after,
+.part-experiencia-inolvidable .swipper-container .swiper-button-prev::after {
+  font-size: 1.2em;
+}
+.part-experiencia-inolvidable .swipper-container .swiper-button-next.swiper-button-prev::after,
+.part-experiencia-inolvidable .swipper-container .swiper-button-prev.swiper-button-prev::after {
+  position: relative;
+  left: -2px;
+}
+.part-experiencia-inolvidable .swipper-container .swiper-button-next.swiper-button-next::after,
+.part-experiencia-inolvidable .swipper-container .swiper-button-prev.swiper-button-next::after {
+  position: relative;
+  right: -2px;
+}
+
+/* ----- Banner reserva ----- */
+.part-banner-reserva {
+  border-top-right-radius: 100px;
+  padding: 52px 0px;
+}
+.part-banner-reserva .bg-banner-reserva {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 10;
+}
+.part-banner-reserva::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.58);
+  top: 0;
+  z-index: 11;
+}
+.part-banner-reserva .container {
+  z-index: 12;
+}
+
+/* ----- Form Area ------ */
+.form-area.form-area-blue {
+  background: rgb(0, 92, 170);
+  color: #fff;
+}
+.form-area.form-area-gray {
+  background: rgb(243, 243, 243);
+}
+.form-area {
+  padding: 33px;
+  border-radius: 30px;
+}
+.form-area.form-area-contacto {
+  padding: 116px 33px 33px 33px;
+}
+.form-area .girocoptero {
+  position: absolute;
+  width: 50%;
+  top: -123px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: rotateY(180deg);
+}
+.form-area .wpcf7-not-valid-tip {
+  font-weight: 600;
+  margin-top: 7px;
+  font-size: 0.85em;
+  color: #549edd;
+}
+.form-area .form-row {
+  margin-bottom: 20px;
+}
+.form-area .form-row .form-group label {
+  margin-bottom: 5px;
+}
+.form-area .form-row .form-group .form-control,
+.form-area .form-row .form-group .form-select {
+  border-radius: 10px;
+  padding: 9px 15px;
+  font-size: 0.9em;
+}
+.form-area .form-row .form-group .form-control::placeholder,
+.form-area .form-row .form-group .form-select::placeholder {
+  color: rgb(136, 136, 136);
+}
+.form-area .form-row .form-group .form-control:focus,
+.form-area .form-row .form-group .form-select:focus {
+  box-shadow: none;
+}
+.form-area .form-row .form-group textarea {
+  height: 150px;
+  max-height: 150px;
+  min-height: 150px;
+}
+.form-area .form-row.two .form-group {
+  width: 49%;
+}
+
+footer {
+  background-color: rgb(0, 92, 170);
+  color: #fff;
+}
+footer a,
+footer a:active {
+  color: #fff;
+}
+footer .widgets-area {
+  margin-bottom: 44px;
+}
+footer .widgets-area .widget-item > .widget:not(:last-child) {
+  margin-bottom: 41px;
+}
+footer .widgets-area .widget-item .widget-title {
+  margin-bottom: 16px;
+}
+footer .menu {
+  list-style: none;
+  padding: 0;
+}
+footer .menu li a {
+  display: block;
+  font-size: 0.95em;
+  font-weight: 300;
+}
+footer .menu li:not(:last-child) {
+  margin-bottom: 10px;
+}
+footer .menu:last-child {
+  margin-bottom: 0;
+}
+footer .info-area {
+  margin-bottom: 20px;
+}
+footer .info-area .redes-area ul li,
+footer .info-area .metodos-area ul li {
+  display: block;
+  padding: 0px 10px;
+}
+footer .info-area .metodos-area li {
+  background: rgb(33, 110, 175);
+  margin-right: 8px;
+  padding: 6px 17px !important;
+  border-radius: 4px;
+}
+footer .info-area .metodos-area li img {
+  height: 14px;
+}
+footer .info-area .metodos-area li.azul img {
+  height: 20px;
+}
+footer .info-area .metodos-area li.amex img {
+  height: 27px;
+}
+footer .under-footer {
+  border-top: 1px solid rgb(2, 104, 190);
+  padding: 28px 0px;
+}
+
+@media screen and (min-width: 992px) {
+  .w-lg-40 {
+    width: 40%;
+  }
+  .w-lg-50 {
+    width: 50%;
+  }
+  .w-lg-60 {
+    width: 60%;
+  }
+  .w-lg-70 {
+    width: 70%;
+  }
+  .w-lg-90 {
+    width: 90%;
+  }
+  .w-lg-fit-content {
+    width: fit-content;
+  }
+  .part-main-banner .item {
+    height: calc(100dvh - 40.75px);
+  }
+  .part-main-banner .item .caption-area {
+    top: 0;
+    position: absolute;
+  }
+  .part-punta-cana-gyrofly .image-area img {
+    position: absolute;
+    left: 0;
+    width: calc(50% - 3rem);
+    height: 100%;
+    object-fit: cover;
+  }
+  .part-experiencia-inolvidable .swipper-container .swiper.experiencias {
+    width: calc(100% - 160px);
+  }
+  footer .widgets-area .widget-item {
+    width: 24%;
+  }
+}
+@media screen and (max-width: 992px) {
+  header {
+    margin-bottom: -68.25px;
+  }
+  header nav {
+    padding: 13px 0px !important;
+  }
+  .part-main-banner .item {
+    padding-bottom: 60px;
+    min-height: calc(100dvh - 40.75px);
+  }
+  .part-main-banner .item .main-img {
+    position: absolute;
+    object-position: 68%;
+  }
+  .part-main-banner .item .caption-area {
+    position: relative;
+    padding-top: 32dvh;
+  }
+  .part-main-banner .item .caption-area h1 {
+    font-size: 2.4em;
+  }
+  .part-main-banner .item .blur-item {
+    width: 78%;
+    margin: 0 auto;
+  }
+  .part-main-banner .item .blur-item h6 {
+    font-size: 1.4em;
+  }
+  .part-punta-cana-gyrofly .image-area img {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+  /* ----- Form Area ------ */
+  .form-area .form-row {
+    flex-wrap: wrap;
+  }
+  .form-area .form-row.two .form-group {
+    width: 100%;
+  }
+  .form-area .form-row.two .form-group:first-child {
+    margin-bottom: 20px;
+  }
+  footer .widgets-area,
+  footer .info-area,
+  footer .redes-area,
+  footer .metodos-area {
+    flex-wrap: wrap;
+  }
+  footer .widgets-area .widget-item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  footer .info-area .redes-area,
+  footer .info-area .metodos-area {
+    width: 100%;
+    justify-content: center;
+  }
+  footer .info-area .redes-area span,
+  footer .info-area .metodos-area span {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  footer .info-area .redes-area ul,
+  footer .info-area .metodos-area ul {
+    width: 100%;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  footer .info-area .redes-area:not(:last-child),
+  footer .info-area .metodos-area:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}

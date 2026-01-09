@@ -1,0 +1,1099 @@
+:root {
+    --color-primary: rgb(0, 92, 170);
+    --color-secondary: rgba(0, 165, 155, 1);
+    --color-yellow: rgba(255, 193, 7, 1);
+
+    --title-blue: rgba(0, 92, 170, 1);
+}
+
+body {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 1);
+    font-family: "Montserrat", sans-serif;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+hr{
+    color: rgb(179 179 179);
+}
+
+.the-content{
+    color:rgba(44, 44, 44, 1);
+}
+
+.wpcf7 {
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .wpcf7-response-output {
+        margin: 0 !important;
+        border: 0 !important;
+        padding: 0 !important;
+        text-align: center !important;
+    }
+
+    .wpcf7-spinner{
+        display:none;
+    }
+}
+
+.fs-2-7 {
+    font-size: 2.7em;
+}
+
+ul.bullets {
+    list-style: none;
+    padding: 0;
+
+    li {
+
+        padding-left: 20px;
+        color: rgba(44, 44, 44, 1);
+
+        &::before {
+            content: "";
+            display: block;
+            height: 4px;
+            width: 4px;
+            background-color: #444;
+            position: absolute;
+            top: 8px;
+            left: 6px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.accordion.topetop {
+
+    .accordion-item {
+
+        background: transparent;
+        border: 0;
+        margin-bottom: 10px;
+
+        .accordion-button {
+
+            background: transparent;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+            padding: 16px 0px;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        .accordion-body {
+            padding: 24px 0px !important;
+        }
+    }
+}
+
+.bg-gray {
+    background: rgba(246, 246, 246, 1);
+}
+
+.btn-border-radius {
+    border-radius: 37px;
+}
+
+.btn.text-small {
+    font-size: 0.9em;
+}
+
+.btn {
+
+    padding: 12px 26px;
+
+    &.small {
+        padding: 10px 26px;
+    }
+}
+
+.btn-primary {
+
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: rgb(12 79 136);
+        border-color: rgb(12 79 136);
+    }
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: rgb(4 145 136) !important;
+        border-color: rgb(4 145 136) !important;
+    }
+}
+
+.btn-yellow {
+
+    background-color: var(--color-yellow);
+    border-color: var(--color-yellow);
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: rgb(219 165 1) !important;
+        border-color: rgb(219 165 1) !important;
+        color: #000 !important;
+    }
+}
+
+.py-20 {
+    padding: 20px 0px;
+}
+
+.py-30 {
+    padding: 30px 0px;
+}
+
+.py-40 {
+    padding: 40px 0px;
+}
+
+.py-50 {
+    padding: 50px 0px;
+}
+
+.py-60 {
+    padding: 60px 0px;
+}
+
+.py-70 {
+    padding:70px 0px;
+}
+
+.no-banner{
+	margin-top: 84px;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+.tt-border-radius{
+    border-radius:52px;
+}
+
+.img-border-radius-top {
+    border-top-right-radius: 131px;
+}
+
+.floating {
+    animation: float 5s ease-in-out infinite
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-10px)
+    }
+}
+
+.title-blue{
+    color:var(--title-blue) !important;
+}
+
+.text-bg-gray{
+    color:rgba(44, 44, 44, 1);
+}
+
+/* ---- Faqs ----- */
+.accordion.faqs{
+
+	.accordion-item{
+
+		background:rgba(248, 248, 248, 1);
+		margin-bottom:14px;
+		border-radius:10px;
+
+		.accordion-button{
+
+			padding: 23px;
+			color:rgba(44, 44, 44, 1);
+
+			&:focus, &:not(:focus){
+				box-shadow:none !important;
+				border:0 !important;
+			}
+		}
+
+		.accordion-body{
+
+			&::before{
+				position:absolute;
+				content:'';
+				display:block;
+				height:100%;
+				width:4px;
+				left:0;
+				top:0;
+				bottom:0;
+				background:transparent;
+				transition:background 0.1s ease-in-out;
+			}
+		}
+
+        .accordion-collapse.show{
+
+
+            .accordion-body{
+
+                &::before{
+                    background:rgba(0, 166, 156, 1);
+                }
+            }
+        }
+	}
+}
+
+.top-bar {
+
+    background: rgba(29, 29, 29, 1);
+    padding: 9px 0px;
+    color: #fff;
+    z-index: 101;
+
+    button,
+    a {
+        color: #fff;
+    }
+
+    .redes {
+
+        li {
+            a {
+                display: block;
+                margin: 0px 7px;
+            }
+        }
+    }
+
+    .options {
+
+        font-size: 0.9em;
+
+        >li:not(:first-child) {
+            margin-left: 26px;
+        }
+
+        .lang-switch {
+
+            button {
+
+                span {
+                    margin: 0px 6px;
+                }
+
+                i.bi-chevron-down {
+                    top: 3px;
+                    font-size: 0.75em;
+                }
+
+                &::after {
+                    display: none;
+                }
+            }
+
+            .lang-list {
+
+                li {
+                    a {
+                        color: #444;
+                        font-size: 0.9em;
+
+                        &:hover,
+                        &:focus {
+                            background-color: var(--color-primary);
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#offcanvasMenu {
+
+    .logged-in & .offcanvas-header {
+        padding-top: 62px;
+    }
+
+    .nav-item {
+
+        .nav-link {
+            color: rgba(7, 19, 69, 1);
+            font-size: 1.12em;
+            font-weight: 500;
+
+            &:hover,
+            .current_page_item & {
+                color: var(--blue) !important;
+            }
+        }
+    }
+}
+
+/* ---- Off Canvas ------ */
+#offcanvasMenu {
+
+    .menu-container {
+        height: calc(100dvh - 300px);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .nav-link {
+            font-size: 1.4em;
+            padding: 16px 0px;
+            text-align: center;
+        }
+    }
+
+    .dropdown-menu {
+        left: 0 !important;
+        right: 0 !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+
+    .lang-switch {
+        position: absolute;
+        bottom: 11%;
+        margin: 0 auto;
+        width: 47%;
+        text-align: center;
+        left: 0;
+        right: 0;
+
+        .lang-list {
+            a {
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+header {
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: -80.25px;
+
+    nav {
+
+        backdrop-filter: blur(6.7px);
+        top: 0px;
+        background: transparent;
+        transition: background 0.3s ease;
+
+        .navbar-toggler {
+
+            padding: 0;
+            border: 0;
+            margin-right: 11px;
+
+            .menu-bar {
+                background-color: #fff;
+                display: block;
+                height: 3px;
+                width: 39px;
+                margin-bottom: 6px;
+                border-radius: 3px;
+
+                &:nth-child(2) {
+                    width: 80%;
+                    margin-left: auto;
+                }
+
+                &:nth-child(3) {
+                    width: 80%;
+                    margin-left: auto;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            &:focus,
+            &:active {
+                border: 0;
+                outline: none;
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+                margin-right: 11px;
+            }
+        }
+
+        .nav-item {
+
+            .nav-link {
+
+                color: #fff;
+                text-transform: uppercase;
+                padding: 22px 11px !important;
+                display: block;
+                font-size: 0.9em;
+                font-weight: 500;
+
+                &:hover {
+                    color: #efefef;
+                }
+
+                &:focus {
+                    color: #fff;
+                }
+            }
+        }
+
+        &.bg-tt-white {
+
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 2px 13px rgba(26, 26, 26, .03);
+
+            .nav-item {
+
+                .nav-link {
+
+                    color: rgba(44, 44, 44, 1);
+                }
+
+                &.current_page_item,
+                &:hover {
+
+                    .nav-link {
+                        color: var(--color-primary) !important;
+                    }
+                }
+            }
+
+            .navbar-toggler {
+
+                .menu-bar {
+                    background-color: var(--color-primary);
+                }
+            }
+        }
+    }
+
+    .logged-in & {
+        top: 32px !important;
+    }
+}
+
+.section-head {
+
+    .section-title {
+        color: rgba(0, 92, 170, 1);
+        margin-bottom: 15px;
+
+        &.small-title {
+            font-size: 1.5em;
+            line-height: 34px;
+        }
+    }
+
+    p {
+        color: rgba(120, 120, 120, 1);
+    }
+}
+
+.part-main-banner {
+
+    .item {
+
+        img.main-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: all 1.5s ease-out;
+
+            &.zoom-in {
+                transform: scale(1.05);
+            }
+        }
+
+        .caption-area {
+            z-index: 50;
+            top: 0;
+            height: 100%;
+
+            h1 {
+                font-size: 3.3em;
+                font-weight: 800;
+            }
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.31);
+            position: absolute;
+            z-index: 49;
+        }
+    }
+}
+
+.blur-item {
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border-radius: 22px;
+    padding: 20px 15px;
+
+    .image-area {
+
+        img {
+            width: 57%;
+            margin: 0 auto 20px auto;
+            transform: rotateY(180deg);
+        }
+    }
+
+    .item-caption-area {
+
+        width: fit-content;
+        margin: 0 auto;
+
+        h6 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .features {
+
+            li {
+
+                font-size: 1.2em;
+
+                i {
+                    margin-right: 10px;
+                }
+
+                &:nth-child(2) i {
+                    font-size: 1.2em;
+                    margin-right: 7px;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+.part-punta-cana-gyrofly {
+
+    min-height: 100dvh;
+}
+
+.tour-features {
+
+    li {
+
+        margin-bottom: 15px;
+
+        .icon-area {
+            margin-right: 15px;
+            font-size: 1.2em;
+        }
+
+        .caption-area {
+            padding-top: 2.5px;
+        }
+    }
+}
+
+/* ----- Experiencias inolvidables ------ */
+.part-experiencia-inolvidable {
+
+    .swipper-container {
+
+        position: relative;
+
+        .swiper.experiencias {
+
+            margin: 0 auto;
+            margin-top: 40px;
+
+            .swiper-slide {
+
+                user-select: none;
+                -moz-user-select: none;
+                -khtml-user-select: none;
+                -webkit-user-select: none;
+                -o-user-select: none;
+
+                img {
+                    aspect-ratio: 16 / 13;
+                    border-radius: 40px;
+                }
+            }
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+
+            background: var(--color-secondary);
+            color: #fff;
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+
+            &:hover {
+                background: rgb(7 147 138);
+            }
+
+            &::after {
+                font-size: 1.2em;
+            }
+
+            &.swiper-button-prev::after {
+                position: relative;
+                left: -2px;
+            }
+
+            &.swiper-button-next::after {
+                position: relative;
+                right: -2px;
+            }
+        }
+    }
+}
+
+/* ----- Banner reserva ----- */
+.part-banner-reserva {
+
+    border-top-right-radius: 100px;
+    padding: 52px 0px;
+
+    .bg-banner-reserva {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: 10;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.58);
+        top: 0;
+        z-index: 11;
+    }
+
+    .container {
+        z-index: 12;
+    }
+}
+
+/* ----- Form Area ------ */
+.form-area {
+
+    &.form-area-blue{
+        background: rgba(0, 92, 170, 1);
+        color: #fff;
+    }
+
+    &.form-area-gray{
+        background: rgba(243, 243, 243, 1);
+    }
+
+    padding: 33px;
+    border-radius: 30px;
+
+    &.form-area-contacto{
+        padding: 116px 33px 33px 33px;
+    }
+
+    .girocoptero {
+        position: absolute;
+        width: 50%;
+        top: -123px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: rotateY(180deg);
+    }
+
+    .wpcf7-not-valid-tip {
+        font-weight: 600;
+        margin-top: 7px;
+        font-size: 0.85em;
+        color: #549edd;
+    }
+
+    .form-row {
+
+        margin-bottom: 20px;
+
+        .form-group {
+
+            label {
+                margin-bottom: 5px;
+            }
+
+            .form-control,
+            .form-select {
+
+                border-radius: 10px;
+                padding: 9px 15px;
+                font-size: 0.9em;
+
+                &::placeholder {
+                    color: rgba(136, 136, 136, 1);
+                }
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            textarea {
+                height: 150px;
+                max-height: 150px;
+                min-height: 150px;
+            }
+        }
+
+        &.two {
+
+            .form-group {
+
+                width: 49%;
+            }
+        }
+    }
+}
+
+footer {
+
+    background-color: rgba(0, 92, 170, 1);
+    color: #fff;
+
+    a,
+    a:active {
+        color: #fff;
+    }
+
+    .widgets-area {
+
+        margin-bottom: 44px;
+
+        .widget-item {
+
+            >.widget:not(:last-child) {
+                margin-bottom: 41px;
+            }
+
+            .widget-title {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    .menu {
+
+        list-style: none;
+        padding: 0;
+
+        li {
+
+            a {
+                display: block;
+                font-size: 0.95em;
+                font-weight: 300;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .info-area {
+
+        margin-bottom: 20px;
+
+        .redes-area,
+        .metodos-area {
+
+            ul {
+
+                li {
+                    display: block;
+                    padding: 0px 10px;
+                }
+            }
+        }
+
+        .metodos-area {
+
+            li {
+                background: rgba(33, 110, 175, 1);
+                margin-right: 8px;
+                padding: 6px 17px !important;
+                border-radius: 4px;
+
+                img {
+                    height: 14px;
+                }
+
+                &.azul img {
+                    height: 20px;
+                }
+
+                &.amex img {
+                    height: 27px;
+                }
+            }
+        }
+    }
+
+    .under-footer {
+        border-top: 1px solid rgba(2, 104, 190, 1);
+        padding: 28px 0px;
+    }
+}
+
+
+@media screen and (min-width:992px) {
+
+    .w-lg-40 {
+        width: 40%;
+    }
+
+    .w-lg-50 {
+        width: 50%;
+    }
+
+    .w-lg-60 {
+        width: 60%;
+    }
+
+    .w-lg-70 {
+        width: 70%;
+    }
+
+    .w-lg-90 {
+        width: 90%;
+    }
+
+    .w-lg-fit-content {
+        width: fit-content;
+    }
+
+    .part-main-banner {
+
+        .item {
+
+            height: calc(100dvh - 40.75px);
+
+            .caption-area {
+                top: 0;
+                position: absolute;
+            }
+
+        }
+    }
+
+    .part-punta-cana-gyrofly {
+
+        .image-area {
+
+            img {
+                position: absolute;
+                left: 0;
+                width: calc(50% - 3rem);
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .part-experiencia-inolvidable {
+
+        .swipper-container {
+
+            .swiper.experiencias {
+
+                width: calc(100% - 160px);
+            }
+        }
+    }
+
+    footer {
+
+        .widgets-area {
+
+            .widget-item {
+
+                width: 24%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    header {
+        margin-bottom: -68.25px;
+
+        nav {
+            padding: 13px 0px !important;
+        }
+    }
+
+    .part-main-banner {
+
+        .item {
+
+            padding-bottom: 60px;
+            min-height: calc(100dvh - 40.75px);
+
+            .main-img {
+                position: absolute;
+                object-position: 68%;
+            }
+
+            .caption-area {
+                position: relative;
+                padding-top: 32dvh;
+
+                h1 {
+                    font-size: 2.4em;
+                }
+            }
+
+            .blur-item {
+                width: 78%;
+                margin: 0 auto;
+
+                h6 {
+                    font-size: 1.4em;
+                }
+            }
+
+        }
+    }
+
+    .part-punta-cana-gyrofly {
+
+        .image-area {
+
+            img {
+                max-width: 100%;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    /* ----- Form Area ------ */
+    .form-area {
+
+        .form-row {
+            flex-wrap: wrap;
+        }
+
+        .form-row.two {
+
+            .form-group {
+
+                width: 100%;
+
+                &:first-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    footer {
+
+        .widgets-area,
+        .info-area,
+        .redes-area,
+        .metodos-area {
+            flex-wrap: wrap;
+        }
+
+        .widgets-area {
+
+            .widget-item {
+
+                width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+
+        .info-area {
+
+            .redes-area,
+            .metodos-area {
+
+                width: 100%;
+                justify-content: center;
+
+                span {
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+
+                ul {
+                    width: 100%;
+                    width: fit-content;
+                    margin: 0 auto;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
